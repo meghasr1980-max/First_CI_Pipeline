@@ -12,7 +12,7 @@ def largest_word(sentence):
     
     largest = ""
     for word in sentence.split():
-        clean = word.strip(string.punctuation)  # remove ,, !? etc.
+        clean = word.strip(string.punctuation)
         if len(clean) > len(largest):
             largest = clean
     return largest
